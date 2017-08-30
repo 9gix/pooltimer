@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+	<h1 class="text-center">Pool Timer</h1>
+	<div class="control-panel text-center" id="control-panel">
+		<button type="button" class="btn btn-primary" id="player-start">Player Start</button>
+		<button type="button" class="btn btn-danger" id="gameover">Gameover</button>
+	</div>
+	<div class="timer">
+		<h3 class="text-center">Game Duration</h3>
+		<!-- <div class="alert time text-center" id="game-timer">00:00</div> -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="game-timer">
+		    00:00
+		  </div>
+		</div>
+	</div>
+	<div class="timer">
+		<h3 class="text-center">Player Timer</h3>
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="player-timer">
+		    00:00
+		  </div>
+		</div>
+	</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

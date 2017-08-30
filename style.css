@@ -1,0 +1,28 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.container {
+	width: auto;
+	max-width: 300px;
+	padding: 0 15px;
+	background: #e6e6e6;
+}
+
+
+.control-panel {
+
+}
+
+.cool {
+	background: #0bc902;
+}
+
+.warn {
+	background: #e2a20d;
+}
+
+.over {
+	background: #dd0000;
+}
