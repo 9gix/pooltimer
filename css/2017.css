@@ -1,0 +1,70 @@
+html {
+	height: 100%;
+	user-select: none;
+}
+
+.playing .shooting {
+	color: green;
+}
+
+.shooting {
+	font-weight: bold;
+}
+
+.playing.shooting:after {
+	content: ' (Now)';
+}
+
+td:not(.shooting):not(.playing):after {
+	content: ' (Next)';
+}
+
+td.shooting:after {
+	content: ' (Prev)';
+}
+
+.playing {
+	background: #4fe2a7;
+}
+
+#main-site {
+	min-height: 100vh;
+}
+
+.player-table, .player-name-col {
+	margin: 30px auto;
+	table-layout: fixed;
+	border: medium solid black;
+}
+.player-name-col {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+	font-size: larger;
+}
+.container {
+	width: auto;
+	max-width: 600px;
+	padding: 0 15px;
+	background: #e6e6e6;
+}
+
+
+.control-panel {
+
+}
+
+.cool {
+	background: #0bc902;
+}
+
+.warn {
+	background: #e2a20d;
+}
+
+.over {
+	background: #dd0000;
+}
+.instruction {
+	font-size: smaller;
+}

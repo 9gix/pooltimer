@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/2017.css" rel="stylesheet" />
+</head>
+<body>
+<div id="main-site">
+<div class="container" id='main-page'>
+	<div class="page-title">
+		<h1 class="text-center">ADSK Pool Tournament 2017</h1>
+		<h3 class="text-center">Team <span id="home-team">Home</span> <small>vs</small> Team <span id="away-team">Away</span></h3>
+	</div>
+	<div class="center-block" id='player-info'>
+		<table class="player-table">
+			<tr>
+				<th class="player-name-col" id="home-0">Home</th>
+				<th class="player-name-col" id="away-0">Away</th>
+			</tr>
+			<tr>
+				<td class="player-name-col" id="home-1">Home 1</td>
+				<td class="player-name-col" id="away-1">Away 1</td>
+			</tr>
+			<tr>
+				<td class="player-name-col" id="home-2">Home 2</td>
+				<td class="player-name-col" id="away-2">Away 2</td>
+			</tr>
+		</table>
+	</div>
+	<div class="timer">
+		<h3 class="text-center">Game Duration : <small id="game-timer-lbl">00:00</small></h3>
+		<!-- <div class="alert time text-center" id="game-timer">00:00</div> -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="game-timer">
+		    00:00
+		  </div>
+		</div>
+	</div>
+	<div class="timer">
+		<h3 class="text-center">Player Timer : <small id="player-timer-lbl">00:00</small></h3>
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="player-timer">
+		    00:00
+		  </div>
+		</div>
+	</div>
+	<div class="instruction">
+		<h4 class="text-center">Instruction:</h4>
+		<dl class="dl-horizontal">
+		<dt>Left Click</dt><dd>Left Team, Next Player, Start</dd>
+		<dt>Right Click</dt><dd>Right Team, Next Player, Start</dd>
+		<dt>Middle Click</dt><dd>Same Team, Same Player, Start</dd>
+		<dt>Middle Scroll</dt><dd>Reset Current Player Timer</dd>
+		<dt>Left+Right Click</dt><dd>Reset All Timer</dd>
+		</dl>
+	</div>
+</div>
+</div>
+<script src="js/2017.js"></script>
+</body>
+</html>

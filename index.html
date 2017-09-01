@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="style.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/bootstrap.min.css"
 </head>
 <body>
 <div class="container">
-	<div class="page-title">
-		<h1 class="text-center">ADSK Pool 2017</h1>
-		<h2 class="text-center" ><small id="headline"></small></h2>
-	</div>
-	<div class="control-panel text-center" id="control-panel">
-		<button type="button" class="btn btn-primary" id="player-start">Player Start</button>
-		<button type="button" class="btn btn-danger" id="gameover">Gameover</button>
-	</div>
-	<div class="timer">
-		<h3 class="text-center">Game Duration</h3>
-		<!-- <div class="alert time text-center" id="game-timer">00:00</div> -->
-		<div class="progress">
-		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="game-timer">
-		    00:00
-		  </div>
-		</div>
-	</div>
-	<div class="timer">
-		<h3 class="text-center">Player Timer</h3>
-		<div class="progress">
-		  <div class="progress-bar progress-bar-striped active" role="progressbar" id="player-timer">
-		    00:00
-		  </div>
-		</div>
-	</div>
+<h1>Pool Timer for ADSK Tournament 2017</h1>
+<form id="pool-form" method="GET" action="2017.html">
+<div class="form-group">
+	<label for="home">Home</label><input class="form-control" id="home" name="home" placeholder="A">
+	<label for="p1">Player 1</label><input class="form-control" id="p1" name="p1" />
+	<label for="p2">Player 2</label><input class="form-control" id="p2" name="p2" />
 </div>
-<script src="index.js"></script>
+<div class="form-group">
+	<label for="away">Away</label><input class="form-control" id="away" name="away" placeholder="B" />
+	<label for="p3">Player 3</label><input class="form-control" id="p4" name="p3" />
+	<label for="p4">Player 4</label><input class="form-control" id="p4" name="p4" />
+</div>
+<button class="btn btn-primary">Submit</button>
+</form>
+<hr />
+<p>
+<a href="basic-timer.html">Simple Timer</a>
+</p></div>
 </body>
 </html>

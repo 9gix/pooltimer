@@ -39,8 +39,23 @@ var teamEl = [
 		document.getElementById('away-0'),
 	]
 ];
+var renderPlayers = function(){
+	if (match.currentTeam === -1){
+		for (var i = 0; i < 3; i++){
+			teamEl[0][i].classList.remove('playing', 'shooting');
+			teamEl[1][i].classList.remove('playing', 'shooting');
+		}
+	} else {
+		var currentPlayer = match[match.currentTeam].currentPlayer;
+		teamEl[match.currentTeam][currentPlayer].classList.add('shooting');
+		teamEl[match.currentTeam][1^currentPlayer].classList.remove('shooting');
 
-
+		for (var i = 0; i < 3; i++){
+			teamEl[match.currentTeam][i].classList.add('playing');
+			teamEl[1^match.currentTeam][i].classList.remove('playing');
+		}
+	}
+} 
 var initialPlayerRenders = function(){
 	teamEl[0][0].innerHTML = match[0].players[0];
 	teamEl[0][1].innerHTML = match[0].players[1];
@@ -123,23 +138,6 @@ window.onload = function(){
 		renderGameTimer();
 		playGameSound();
 	}
-	var renderPlayers = function(){
-		if (match.currentTeam === -1){
-			for (var i = 0; i < 3; i++){
-				teamEl[0][i].classList.remove('playing', 'shooting');
-				teamEl[1][i].classList.remove('playing', 'shooting');
-			}
-		} else {
-			var currentPlayer = match[match.currentTeam].currentPlayer;
-			teamEl[match.currentTeam][currentPlayer].classList.add('shooting');
-			teamEl[match.currentTeam][1^currentPlayer].classList.remove('shooting');
-
-			for (var i = 0; i < 3; i++){
-				teamEl[match.currentTeam][i].classList.add('playing');
-				teamEl[1^match.currentTeam][i].classList.remove('playing');
-			}
-		}
-	} 
 	var renderTimer = function(){
 		renderGameTimer();
 		renderPlayerTimer();
