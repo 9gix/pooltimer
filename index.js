@@ -117,3 +117,7 @@ window.onload = function(){
 	resetTimer();
 	playerStartBtn.focus();
 }
+
+var headline = document.getElementById('headline');
+var url = new URL(window.location);
+headline.innerHTML = url.searchParams.get('title');
