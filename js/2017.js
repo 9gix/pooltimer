@@ -79,6 +79,10 @@ window.onload = function(){
 	var playerOverSound = new Audio('horn.wav');
 	var gameWarnSound = new Audio('bell.wav');
 	var gameOverSound = new Audio('honk.wav')
+	playerWarnSound.load();
+	playerOverSound.load();
+	gameWarnSound.load();
+	gameOverSound.load();
 	var currentGameTime = 0;
 	var currentPlayerTime = 0;
 	var isGameStarted = false;
