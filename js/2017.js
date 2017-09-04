@@ -73,7 +73,7 @@ window.onload = function(){
 	};
 	var PLAYER_TIME = {
 		LIMIT: 45,
-		WARN: 40,
+		WARN: 38,
 	};
 	var playerWarnSound = new Audio('beep.wav');
 	var playerOverSound = new Audio('horn.wav');
