@@ -7,12 +7,21 @@ html {
 	color: green;
 }
 
+.playing.shooting.pause {
+	background: red;
+	color: yellow;
+}
+
 .shooting {
 	font-weight: bold;
 }
 
 .playing.shooting:after {
 	content: ' (Now)';
+}
+
+.playing.shooting.pause:after {
+	content: ' (PAUSE)';
 }
 
 td:not(.shooting):not(.playing):after {
@@ -27,10 +36,6 @@ td.shooting:after {
 	background: #4fe2a7;
 }
 
-#main-site {
-	min-height: 100vh;
-}
-
 .player-table, .player-name-col {
 	margin: 30px auto;
 	table-layout: fixed;
@@ -42,13 +47,17 @@ td.shooting:after {
 	padding: 10px;
 	font-size: larger;
 }
-.container {
+#main-site {
+	min-height: 100vh;
 	width: auto;
-	max-width: 600px;
 	padding: 0 15px;
-	background: #e6e6e6;
+	background: #f0f0f0;
 }
 
+#main-page {
+	padding-top: 1%;
+	background: #e0e0e0;
+}
 
 .control-panel {
 
@@ -66,5 +75,15 @@ td.shooting:after {
 	background: #dd0000;
 }
 .instruction {
-	font-size: smaller;
+	font-size: xx-small;
+}
+
+.dl-horizontal dt 
+{
+    white-space: normal;
+    width: 90px; 
+}
+.dl-horizontal dd
+{
+    margin-left: 100px; 
 }
